@@ -1,0 +1,24 @@
+# This file overrides https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+
+AllCops:
+  TargetRubyVersion: 2.4
+
+Metrics/LineLength:
+  Exclude:
+    - 'spec/paiza_spec.rb'
+
+# =begin
+# comment line
+# another comment line
+# =end
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+# Use only ascii symbols in comments.
+Style/AsciiComments:
+  Enabled: false
+
+# Missing top-level documentation of classes and modules.
+Style/Documentation:
+  Enabled: false
