@@ -8,6 +8,6 @@ class Paiza
   end
 end
 
-# 提出前にコメント外す
+# # 提出前にコメント外す
 # input = gets.chomp
-# puts Paiza.initialize(input).run
+# puts Paiza.new(input).run
