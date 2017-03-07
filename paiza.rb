@@ -8,6 +8,7 @@ class Paiza
   end
 end
 
-# # 提出前にコメント外す
-# input = gets.chomp
-# puts Paiza.new(input).run
+if __FILE__ == $PROGRAM_NAME
+  input = gets.chomp
+  puts Paiza.new(input).run
+end
