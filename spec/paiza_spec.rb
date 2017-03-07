@@ -2,5 +2,5 @@
 require './paiza.rb'
 
 describe Paiza do
-  it { expect(Paiza.new('input').result).to eq 'output' }
+  it { expect(Paiza.new('input').answer).to eq 'output' }
 end
