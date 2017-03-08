@@ -2,12 +2,15 @@
 class Paiza
   attr_reader :answer
 
-  def initialize(input)
+  def initialize(*input)
     # set @answer
   end
 end
 
 if __FILE__ == $PROGRAM_NAME
-  input = gets.chomp
-  puts Paiza.new(input).answer
+  input_lines = 1
+  input = input_lines.times.inject([]) do |line|
+    line << gets.chomp
+  end
+  puts Paiza.new(*input).answer
 end
