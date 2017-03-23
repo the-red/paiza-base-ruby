@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
 describe Paiza do
-  it { expect(Paiza.new('input').answer).to eq 'output' }
+  it do
+    expect(Paiza.new(
+      'line1',
+      'line2'
+    ).answer).to eq('output')
+  end
 end
