@@ -1,9 +1,10 @@
 # frozen_string_literal: true
 describe Paiza do
   it do
-    expect(Paiza.new(
+    paiza = Paiza.new(
       'line1',
       'line2'
-    ).answer).to eq('output')
+    )
+    expect(paiza.answer).to eq('output')
   end
 end
