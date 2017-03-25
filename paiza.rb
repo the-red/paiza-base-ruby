@@ -3,9 +3,7 @@ class Paiza
   attr_reader :answer
 
   def initialize(*input)
-    input[0]
-    input[1]
-    @answer = nil
+    @answer = input
   end
 end
 
